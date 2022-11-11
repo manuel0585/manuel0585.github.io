@@ -12,33 +12,22 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Material Kit CSS -->
-        <link href="Styles.css" rel="stylesheet" />
-      </head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
       
-      <body>
-        <div class="page-header header-filter" data-parallax="true" style="background-image: url(https://i.pinimg.com/736x/77/42/0d/77420df3f9e33db5b79ee25455d3340e.jpg)">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 ml-auto mr-auto">
-                <div class="brand text-center">
-                  <h1>Curso completo de computación</h1>
-                  <h3 class="title text-center">¿Cómo desarmar un computador?</h3>
+    <body>
+        
+        <div class="page-header" data-parallax="true" style="background-image: url(https://i.pinimg.com/736x/77/42/0d/77420df3f9e33db5b79ee25455d3340e.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <div class="brand text-center">
+                            <h1>Curso completo de computación</h1>
+                            <h3 class="title text-center">¿Cómo desarmar un computador?</h3>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="navigation">
-            <ul>
-                <li class="list active">
-                  <a href="#", target="_blank">
-                    <span class="icon"><i class="fa-solid fa-bars"></i></span>
-                    <span class="title">Material de apoyo</span>
-                    <span class="titleu">Adicionales</span>
-                  </a>
-                </li>
-              </div>
-            </ul>
-          </div>
         </div>
         <div class="main main-raised">
           <div class="container">
@@ -52,7 +41,9 @@
                     <li><img src="https://ryrsupport.net/wp-content/uploads/2017/06/mantenimiento_reparacion.jpg" alt=""></li>
                   </ul>
               </div>
+              
             </div>
+            
             <div class="text">
               Una máquina está diseñada para funcionar correctamente en cualquier momento. Pero de tanto en tanto necesita ciertas tareas de mantenimiento para que siga funcionando como el primer día y nos dure más. Con nuestra computadora ocurre lo mismo.
 
@@ -62,8 +53,27 @@
 
               Muchas te sonarán, pero no está de más hacer una lista de tareas para el mantenimiento del PC. Te será muy práctica para aplicarla durante el año y no dejarte nada por hacer. Tu computadora te lo agradecerá y tú mismo verás los cambios.
             </div>
+            
           </div>
+          <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
         </div>
+       
         <footer class="footer footer-default">
           <div class="container">
             <div class="copyright float-right">
